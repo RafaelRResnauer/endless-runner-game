@@ -1,2 +1,3 @@
 # Endless Runner Game
-Jogo inspirado no jogo do dinossauro do chrome utilzando javascript, CSS e HTML
+Endless runner game inspired by the dinossaur game
+Developed using HTML, CSS and Javascript
