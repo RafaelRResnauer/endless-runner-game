@@ -1,3 +1,3 @@
 # Endless Runner Game
-Endless runner game inspired by the dinossaur game
-Developed using HTML, CSS and Javascript
+##Jogo inspirado no jogo do dinosauro :volcano:
+Desenvolvido utilizando HTML, CSS e Javascript.
