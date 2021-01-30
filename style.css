@@ -17,6 +17,14 @@ body {
     background-image: url(cactus.png);
     bottom: 0;
 }
+
+.pterodactyl_obstacle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(pterodactyl.png);
+    bottom: 70px;
+}
 .game_over {
     text-align: center;
     color: #666666;

@@ -71,9 +71,32 @@ function createCactus() {
         }
     }, 20);
 
+    setTimeout(createPterodactyl, randomTime);
+}
+function createPterodactyl(){
+    const pterodactyl = document.createElement('div');
+    let pterodactylPosition= 1000;
+    let randomTime = Math.random() * 6000;
+
+    pterodactyl.classList.add('pterodactyl_obstacle');
+    pterodactyl.style.left = 1000 + 'px';
+    static_background.appendChild(pterodactyl);
+
+    let leftInterval = setInterval(() => {
+        if(pterodactylPosition < -60) {
+            clearInterval(leftInterval);
+            static_background.removeChild(pterodactyl);
+        }else if(pterodactylPosition > 0 && pterodactylPosition < 60 && charPosition > 70 && charPosition < 130){
+            clearInterval(leftInterval);
+            document.body.innerHTML = '<h1 class="game_over">Fim de Jogo</h1>';
+        }else {
+            pterodactylPosition -= 20;
+            pterodactyl.style.left = pterodactylPosition + 'px';
+        }
+    }, 20);
+
     setTimeout(createCactus, randomTime);
 }
-
 createCactus();
 
 // verifica se tecla foi pressionada
